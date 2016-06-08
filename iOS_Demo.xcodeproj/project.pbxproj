@@ -13,42 +13,18 @@
 		CB25D7D61D07DA44000CE9EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB25D7D41D07DA44000CE9EE /* Main.storyboard */; };
 		CB25D7D81D07DA44000CE9EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB25D7D71D07DA44000CE9EE /* Assets.xcassets */; };
 		CB25D7DB1D07DA44000CE9EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB25D7D91D07DA44000CE9EE /* LaunchScreen.storyboard */; };
-		CB25D7EF1D07DACB000CE9EE /* YXNetworkDiagnose.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB25D7E71D07DA87000CE9EE /* YXNetworkDiagnose.framework */; };
-		CB25D7F01D07DACB000CE9EE /* YXNetworkDiagnose.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB25D7E71D07DA87000CE9EE /* YXNetworkDiagnose.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CB25D88F1D07EF31000CE9EE /* YXNetworkDiagnose.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB25D88C1D07EEF4000CE9EE /* YXNetworkDiagnose.framework */; };
+		CB25D8901D07EF31000CE9EE /* YXNetworkDiagnose.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB25D88C1D07EEF4000CE9EE /* YXNetworkDiagnose.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		CB25D7E61D07DA87000CE9EE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CB25D7E21D07DA87000CE9EE /* YXNetworkDiagnose.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = CB25D7B41D07DA02000CE9EE;
-			remoteInfo = YXNetworkDiagnose;
-		};
-		CB25D7EC1D07DA9C000CE9EE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CB25D7E21D07DA87000CE9EE /* YXNetworkDiagnose.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = CB25D7B31D07DA02000CE9EE;
-			remoteInfo = YXNetworkDiagnose;
-		};
-		CB25D7F11D07DACB000CE9EE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CB25D7E21D07DA87000CE9EE /* YXNetworkDiagnose.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = CB25D7B31D07DA02000CE9EE;
-			remoteInfo = YXNetworkDiagnose;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
-		CB25D7F31D07DACC000CE9EE /* Embed Frameworks */ = {
+		CB25D8911D07EF31000CE9EE /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CB25D7F01D07DACB000CE9EE /* YXNetworkDiagnose.framework in Embed Frameworks */,
+				CB25D8901D07EF31000CE9EE /* YXNetworkDiagnose.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,7 +42,7 @@
 		CB25D7D71D07DA44000CE9EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB25D7DA1D07DA44000CE9EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB25D7DC1D07DA44000CE9EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB25D7E21D07DA87000CE9EE /* YXNetworkDiagnose.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = YXNetworkDiagnose.xcodeproj; sourceTree = "<group>"; };
+		CB25D88C1D07EEF4000CE9EE /* YXNetworkDiagnose.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = YXNetworkDiagnose.framework; path = "/Users/Yourtion/Library/Developer/Xcode/DerivedData/YXNetworkDiagnose-fwmhltbyxmrcuwbzwgirkxefkixz/Build/Products/Debug-iphoneos/YXNetworkDiagnose.framework"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB25D7EF1D07DACB000CE9EE /* YXNetworkDiagnose.framework in Frameworks */,
+				CB25D88F1D07EF31000CE9EE /* YXNetworkDiagnose.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +60,7 @@
 		CB25D7BF1D07DA44000CE9EE = {
 			isa = PBXGroup;
 			children = (
-				CB25D7E21D07DA87000CE9EE /* YXNetworkDiagnose.xcodeproj */,
+				CB25D88C1D07EEF4000CE9EE /* YXNetworkDiagnose.framework */,
 				CB25D7CA1D07DA44000CE9EE /* iOS_Demo */,
 				CB25D7C91D07DA44000CE9EE /* Products */,
 			);
@@ -122,14 +98,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CB25D7E31D07DA87000CE9EE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CB25D7E71D07DA87000CE9EE /* YXNetworkDiagnose.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,13 +108,11 @@
 				CB25D7C41D07DA44000CE9EE /* Sources */,
 				CB25D7C51D07DA44000CE9EE /* Frameworks */,
 				CB25D7C61D07DA44000CE9EE /* Resources */,
-				CB25D7F31D07DACC000CE9EE /* Embed Frameworks */,
+				CB25D8911D07EF31000CE9EE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CB25D7ED1D07DA9C000CE9EE /* PBXTargetDependency */,
-				CB25D7F21D07DACB000CE9EE /* PBXTargetDependency */,
 			);
 			name = iOS_Demo;
 			productName = iOS_Demo;
@@ -178,28 +144,12 @@
 			mainGroup = CB25D7BF1D07DA44000CE9EE;
 			productRefGroup = CB25D7C91D07DA44000CE9EE /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = CB25D7E31D07DA87000CE9EE /* Products */;
-					ProjectRef = CB25D7E21D07DA87000CE9EE /* YXNetworkDiagnose.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				CB25D7C71D07DA44000CE9EE /* iOS_Demo */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		CB25D7E71D07DA87000CE9EE /* YXNetworkDiagnose.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = YXNetworkDiagnose.framework;
-			remoteRef = CB25D7E61D07DA87000CE9EE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CB25D7C61D07DA44000CE9EE /* Resources */ = {
@@ -226,19 +176,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CB25D7ED1D07DA9C000CE9EE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = YXNetworkDiagnose;
-			targetProxy = CB25D7EC1D07DA9C000CE9EE /* PBXContainerItemProxy */;
-		};
-		CB25D7F21D07DACB000CE9EE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = YXNetworkDiagnose;
-			targetProxy = CB25D7F11D07DACB000CE9EE /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CB25D7D41D07DA44000CE9EE /* Main.storyboard */ = {
@@ -346,6 +283,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = iOS_Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yourtion.iOS-Demo";
@@ -357,6 +298,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = iOS_Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yourtion.iOS-Demo";
