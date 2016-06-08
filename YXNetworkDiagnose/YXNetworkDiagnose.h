@@ -6,7 +6,7 @@
 //  Copyright © 2016 Yourtion. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for YXNetworkDiagnose.
 FOUNDATION_EXPORT double YXNetworkDiagnoseVersionNumber;
