@@ -9,8 +9,7 @@
 #import "ViewController.h"
 #import <YXNetworkDiagnose/YXNetworkDiagnose.h>
 
-
-@interface ViewController ()
+@interface ViewController ()<YXNDOutputDelegate>
 
 @end
 
@@ -19,11 +18,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [YXNDPing start:@"192.168.31.1" output:self complete:^(YXNDPingResult *result) {
+        NSLog(@"%@",result.description);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)write:(NSString*)line {
+    NSLog(@"%@", line);
 }
 
 @end

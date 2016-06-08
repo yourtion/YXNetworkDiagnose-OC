@@ -15,3 +15,8 @@ FOUNDATION_EXPORT double YXNetworkDiagnoseVersionNumber;
 FOUNDATION_EXPORT const unsigned char YXNetworkDiagnoseVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <YXNetworkDiagnose/PublicHeader.h>
+
+#import "YXNDProtocols.h"
+#import "YXNDPing.h"
+
+const NSInteger kYXNDRequestStoped = -2;

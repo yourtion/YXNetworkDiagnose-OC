@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		CB25D7B81D07DA03000CE9EE /* YXNetworkDiagnose.h in Headers */ = {isa = PBXBuildFile; fileRef = CB25D7B71D07DA03000CE9EE /* YXNetworkDiagnose.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB25D7F61D07DD69000CE9EE /* YXNDProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = CB25D7F51D07DD69000CE9EE /* YXNDProtocols.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB25D7F91D07DDC5000CE9EE /* YXNDPing.h in Headers */ = {isa = PBXBuildFile; fileRef = CB25D7F71D07DDC5000CE9EE /* YXNDPing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB25D7FA1D07DDC5000CE9EE /* YXNDPing.m in Sources */ = {isa = PBXBuildFile; fileRef = CB25D7F81D07DDC5000CE9EE /* YXNDPing.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CB25D7B41D07DA02000CE9EE /* YXNetworkDiagnose.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YXNetworkDiagnose.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB25D7B71D07DA03000CE9EE /* YXNetworkDiagnose.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXNetworkDiagnose.h; sourceTree = "<group>"; };
 		CB25D7B91D07DA03000CE9EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB25D7F51D07DD69000CE9EE /* YXNDProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXNDProtocols.h; sourceTree = "<group>"; };
+		CB25D7F71D07DDC5000CE9EE /* YXNDPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXNDPing.h; sourceTree = "<group>"; };
+		CB25D7F81D07DDC5000CE9EE /* YXNDPing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXNDPing.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +54,9 @@
 			children = (
 				CB25D7B71D07DA03000CE9EE /* YXNetworkDiagnose.h */,
 				CB25D7B91D07DA03000CE9EE /* Info.plist */,
+				CB25D7F51D07DD69000CE9EE /* YXNDProtocols.h */,
+				CB25D7F71D07DDC5000CE9EE /* YXNDPing.h */,
+				CB25D7F81D07DDC5000CE9EE /* YXNDPing.m */,
 			);
 			path = YXNetworkDiagnose;
 			sourceTree = "<group>";
@@ -59,7 +68,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB25D7F91D07DDC5000CE9EE /* YXNDPing.h in Headers */,
 				CB25D7B81D07DA03000CE9EE /* YXNetworkDiagnose.h in Headers */,
+				CB25D7F61D07DD69000CE9EE /* YXNDProtocols.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB25D7FA1D07DDC5000CE9EE /* YXNDPing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +248,8 @@
 				INFOPLIST_FILE = YXNetworkDiagnose/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourtion.YXNetworkDiagnose;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -252,6 +266,8 @@
 				INFOPLIST_FILE = YXNetworkDiagnose/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourtion.YXNetworkDiagnose;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -277,6 +293,7 @@
 				CB25D7BE1D07DA03000CE9EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
