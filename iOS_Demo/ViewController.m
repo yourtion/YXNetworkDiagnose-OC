@@ -18,7 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [YXNDPing start:@"192.168.31.1" output:self complete:^(YXNDPingResult *result) {
+    [YXNDPing start:@"192.168.1.1" output:self complete:^(YXNDPingResult *result) {
+        NSLog(@"%@",result.description);
+    }];
+    [YXNDTcpPing start:@"qq.com" output:self complete:^(YXNDTcpPingResult *result) {
+        NSLog(@"%@",result.description);
+    }];
+    [YXNDTcpPing start:@"www.baidu.com" port:443 count:6 output:self complete:^(YXNDTcpPingResult *result) {
         NSLog(@"%@",result.description);
     }];
 }
