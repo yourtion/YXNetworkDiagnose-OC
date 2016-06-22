@@ -28,6 +28,11 @@
     [YXNDTcpPing start:@"www.baidu.com" port:443 count:6 output:self complete:^(YXNDTcpPingResult *result) {
         NSLog(@"%@",result.description);
     }];
+    [YXNDNslookup start:@"qq.com" output:self complete:^(NSArray *result) {
+        for(YXNDRecord *res in result) {
+            NSLog(@"%@",res.description);
+        }
+    }];
 }
 
 - (void)setRepresentedObject:(id)representedObject {

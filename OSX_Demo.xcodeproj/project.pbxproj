@@ -14,6 +14,7 @@
 		CB25D8141D07E7A3000CE9EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB25D8121D07E7A3000CE9EE /* Main.storyboard */; };
 		CB42FE071D07F31800EADB77 /* YXNetworkDiagnose.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB25D8921D07EF72000CE9EE /* YXNetworkDiagnose.framework */; };
 		CB42FE081D07F31800EADB77 /* YXNetworkDiagnose.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB25D8921D07EF72000CE9EE /* YXNetworkDiagnose.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBF746A91D0BEB920040F811 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CBF746A81D0BEB920040F811 /* libresolv.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +42,7 @@
 		CB25D8131D07E7A3000CE9EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB25D8151D07E7A3000CE9EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB25D8921D07EF72000CE9EE /* YXNetworkDiagnose.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YXNetworkDiagnose.framework; path = "../../../Library/Developer/Xcode/DerivedData/YXNetworkDiagnose-fwmhltbyxmrcuwbzwgirkxefkixz/Build/Products/Debug/YXNetworkDiagnose.framework"; sourceTree = "<group>"; };
+		CBF746A81D0BEB920040F811 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBF746A91D0BEB920040F811 /* libresolv.tbd in Frameworks */,
 				CB42FE071D07F31800EADB77 /* YXNetworkDiagnose.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,6 +61,7 @@
 		CB25D7FB1D07E7A2000CE9EE = {
 			isa = PBXGroup;
 			children = (
+				CBF746A81D0BEB920040F811 /* libresolv.tbd */,
 				CB25D8921D07EF72000CE9EE /* YXNetworkDiagnose.framework */,
 				CB25D8061D07E7A3000CE9EE /* OSX_Demo */,
 				CB25D8051D07E7A3000CE9EE /* Products */,

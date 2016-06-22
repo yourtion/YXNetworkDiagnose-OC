@@ -15,6 +15,7 @@
 		CB25D7DB1D07DA44000CE9EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB25D7D91D07DA44000CE9EE /* LaunchScreen.storyboard */; };
 		CB25D88F1D07EF31000CE9EE /* YXNetworkDiagnose.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB25D88C1D07EEF4000CE9EE /* YXNetworkDiagnose.framework */; };
 		CB25D8901D07EF31000CE9EE /* YXNetworkDiagnose.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB25D88C1D07EEF4000CE9EE /* YXNetworkDiagnose.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBF746A71D0BEB280040F811 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CBF746A61D0BEB280040F811 /* libresolv.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,7 @@
 		CB25D7DA1D07DA44000CE9EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB25D7DC1D07DA44000CE9EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB25D88C1D07EEF4000CE9EE /* YXNetworkDiagnose.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = YXNetworkDiagnose.framework; path = "/Users/Yourtion/Library/Developer/Xcode/DerivedData/YXNetworkDiagnose-fwmhltbyxmrcuwbzwgirkxefkixz/Build/Products/Debug-iphoneos/YXNetworkDiagnose.framework"; sourceTree = "<absolute>"; };
+		CBF746A61D0BEB280040F811 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBF746A71D0BEB280040F811 /* libresolv.tbd in Frameworks */,
 				CB25D88F1D07EF31000CE9EE /* YXNetworkDiagnose.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,6 +63,7 @@
 		CB25D7BF1D07DA44000CE9EE = {
 			isa = PBXGroup;
 			children = (
+				CBF746A61D0BEB280040F811 /* libresolv.tbd */,
 				CB25D88C1D07EEF4000CE9EE /* YXNetworkDiagnose.framework */,
 				CB25D7CA1D07DA44000CE9EE /* iOS_Demo */,
 				CB25D7C91D07DA44000CE9EE /* Products */,
@@ -289,6 +293,7 @@
 				);
 				INFOPLIST_FILE = iOS_Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yourtion.iOS-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -304,6 +309,7 @@
 				);
 				INFOPLIST_FILE = iOS_Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yourtion.iOS-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
