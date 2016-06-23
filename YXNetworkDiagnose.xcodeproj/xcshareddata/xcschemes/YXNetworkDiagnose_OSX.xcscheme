@@ -26,9 +26,29 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "CBDFBC8C1D1A6A6300D52170"
+               BuildableName = "YXNetworkDiagnoseTests_OSX.xctest"
+               BlueprintName = "YXNetworkDiagnoseTests_OSX"
+               ReferencedContainer = "container:YXNetworkDiagnose.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "CB42FDFA1D07F23A00EADB77"
+            BuildableName = "YXNetworkDiagnose.framework"
+            BlueprintName = "YXNetworkDiagnose_OSX"
+            ReferencedContainer = "container:YXNetworkDiagnose.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
