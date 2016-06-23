@@ -19,6 +19,10 @@
 		CB42FE041D07F27F00EADB77 /* YXNetworkDiagnose.h in Headers */ = {isa = PBXBuildFile; fileRef = CB25D7B71D07DA03000CE9EE /* YXNetworkDiagnose.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB42FE051D07F27F00EADB77 /* YXNDProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = CB25D7F51D07DD69000CE9EE /* YXNDProtocols.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB42FE061D07F27F00EADB77 /* YXNDPing.h in Headers */ = {isa = PBXBuildFile; fileRef = CB25D7F71D07DDC5000CE9EE /* YXNDPing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBEF15291D11BF750028B2B1 /* YXNDNetworkInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = CBEF15271D11BF750028B2B1 /* YXNDNetworkInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBEF152A1D11BF750028B2B1 /* YXNDNetworkInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = CBEF15271D11BF750028B2B1 /* YXNDNetworkInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBEF152B1D11BF750028B2B1 /* YXNDNetworkInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEF15281D11BF750028B2B1 /* YXNDNetworkInfo.m */; };
+		CBEF152C1D11BF750028B2B1 /* YXNDNetworkInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEF15281D11BF750028B2B1 /* YXNDNetworkInfo.m */; };
 		CBF7469E1D0BE6FE0040F811 /* YXNDNslookup.h in Headers */ = {isa = PBXBuildFile; fileRef = CBF7469C1D0BE6FE0040F811 /* YXNDNslookup.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBF7469F1D0BE6FE0040F811 /* YXNDNslookup.h in Headers */ = {isa = PBXBuildFile; fileRef = CBF7469C1D0BE6FE0040F811 /* YXNDNslookup.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBF746A01D0BE6FE0040F811 /* YXNDNslookup.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF7469D1D0BE6FE0040F811 /* YXNDNslookup.m */; };
@@ -35,10 +39,10 @@
 		CB25D7F71D07DDC5000CE9EE /* YXNDPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXNDPing.h; sourceTree = "<group>"; };
 		CB25D7F81D07DDC5000CE9EE /* YXNDPing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXNDPing.m; sourceTree = "<group>"; };
 		CB42FDFB1D07F23A00EADB77 /* YXNetworkDiagnose.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YXNetworkDiagnose.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBEF15271D11BF750028B2B1 /* YXNDNetworkInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXNDNetworkInfo.h; sourceTree = "<group>"; };
+		CBEF15281D11BF750028B2B1 /* YXNDNetworkInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXNDNetworkInfo.m; sourceTree = "<group>"; };
 		CBF7469C1D0BE6FE0040F811 /* YXNDNslookup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXNDNslookup.h; sourceTree = "<group>"; };
 		CBF7469D1D0BE6FE0040F811 /* YXNDNslookup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXNDNslookup.m; sourceTree = "<group>"; };
-		CBF746A21D0BEB0C0040F811 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
-		CBF746A41D0BEB140040F811 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/lib/libresolv.tbd; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +66,6 @@
 		CB25D7AA1D07DA02000CE9EE = {
 			isa = PBXGroup;
 			children = (
-				CBF746A41D0BEB140040F811 /* libresolv.tbd */,
-				CBF746A21D0BEB0C0040F811 /* libresolv.tbd */,
 				CB25D7B61D07DA02000CE9EE /* YXNetworkDiagnose */,
 				CB25D7B51D07DA02000CE9EE /* Products */,
 			);
@@ -90,6 +92,8 @@
 				CB14D5301D09A3DB00EB35C9 /* YXNDTcpPing.m */,
 				CBF7469C1D0BE6FE0040F811 /* YXNDNslookup.h */,
 				CBF7469D1D0BE6FE0040F811 /* YXNDNslookup.m */,
+				CBEF15271D11BF750028B2B1 /* YXNDNetworkInfo.h */,
+				CBEF15281D11BF750028B2B1 /* YXNDNetworkInfo.m */,
 			);
 			path = YXNetworkDiagnose;
 			sourceTree = "<group>";
@@ -105,6 +109,7 @@
 				CB25D7B81D07DA03000CE9EE /* YXNetworkDiagnose.h in Headers */,
 				CB14D5311D09A3DB00EB35C9 /* YXNDTcpPing.h in Headers */,
 				CBF7469E1D0BE6FE0040F811 /* YXNDNslookup.h in Headers */,
+				CBEF15291D11BF750028B2B1 /* YXNDNetworkInfo.h in Headers */,
 				CB25D7F61D07DD69000CE9EE /* YXNDProtocols.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,6 +123,7 @@
 				CB42FE061D07F27F00EADB77 /* YXNDPing.h in Headers */,
 				CBF7469F1D0BE6FE0040F811 /* YXNDNslookup.h in Headers */,
 				CB14D5321D09A3DB00EB35C9 /* YXNDTcpPing.h in Headers */,
+				CBEF152A1D11BF750028B2B1 /* YXNDNetworkInfo.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB14D5331D09A3DB00EB35C9 /* YXNDTcpPing.m in Sources */,
+				CBEF152B1D11BF750028B2B1 /* YXNDNetworkInfo.m in Sources */,
 				CB25D7FA1D07DDC5000CE9EE /* YXNDPing.m in Sources */,
 				CBF746A01D0BE6FE0040F811 /* YXNDNslookup.m in Sources */,
 			);
@@ -228,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB14D5341D09A3DB00EB35C9 /* YXNDTcpPing.m in Sources */,
+				CBEF152C1D11BF750028B2B1 /* YXNDNetworkInfo.m in Sources */,
 				CB42FE031D07F27500EADB77 /* YXNDPing.m in Sources */,
 				CBF746A11D0BE6FE0040F811 /* YXNDNslookup.m in Sources */,
 			);

@@ -20,5 +20,6 @@ FOUNDATION_EXPORT const unsigned char YXNetworkDiagnoseVersionString[];
 #import "YXNDPing.h"
 #import "YXNDTcpPing.h"
 #import "YXNDNslookup.h"
+#import "YXNDNetworkInfo.h"
 
 const NSInteger kYXNDRequestStoped = -2;
