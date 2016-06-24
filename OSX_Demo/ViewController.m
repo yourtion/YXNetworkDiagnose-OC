@@ -39,6 +39,7 @@
     [YXNDHttp start:@"http://baidu.com" output:self complete:^(YXNDHttpResult *result) {
         NSLog(@"%@",result.description);
     }];
+    NSLog(@"%@", [YXNDNetworkInfo externalIpInfo]);
 }
 
 - (void)setRepresentedObject:(id)representedObject {

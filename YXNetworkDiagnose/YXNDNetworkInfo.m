@@ -157,4 +157,19 @@ static int localIp(char *buf) {
     return @"WIFI";
 #endif
 }
+
++ (NSDictionary *)externalIpInfo {
+    NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://ip.taobao.com/service/getIpInfo.php?ip=myip"]];
+    if (!data) return nil;
+    NSError *error;
+    id res = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
+    if (error || ![res isKindOfClass:[NSDictionary class]]) return nil;
+    res = (NSDictionary *)res;
+    return [res objectForKey:@"data"];
+}
+
++ (NSString *)externalIpAddress {
+    return [[YXNDNetworkInfo externalIpInfo] objectForKey:@"ip"];
+}
+
 @end

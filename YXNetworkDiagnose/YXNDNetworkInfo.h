@@ -47,4 +47,18 @@ typedef NS_ENUM(NSUInteger, YXNDNetWorkType) {
  */
 + (NSString *)networkDescription;
 
+/**
+ *  Get external ip address info
+ *
+ *  @return ip info
+ */
++ (NSDictionary *)externalIpInfo;
+
+/**
+ *  Get external ip address
+ *
+ *  @return ip address
+ */
++ (NSString *)externalIpAddress;
+
 @end
