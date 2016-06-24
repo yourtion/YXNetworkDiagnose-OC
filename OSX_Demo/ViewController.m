@@ -36,6 +36,9 @@
     [YXNDTraceRoute start:@"qq.com" output:self complete:^(YXNDTraceRouteResult *result) {
         NSLog(@"%@",result.description);
     }];
+    [YXNDHttp start:@"http://baidu.com" output:self complete:^(YXNDHttpResult *result) {
+        NSLog(@"%@",result.description);
+    }];
 }
 
 - (void)setRepresentedObject:(id)representedObject {
