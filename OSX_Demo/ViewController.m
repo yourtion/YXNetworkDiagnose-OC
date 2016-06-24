@@ -33,6 +33,9 @@
             NSLog(@"%@",res.description);
         }
     }];
+    [YXNDTraceRoute start:@"qq.com" output:self complete:^(YXNDTraceRouteResult *result) {
+        NSLog(@"%@",result.description);
+    }];
 }
 
 - (void)setRepresentedObject:(id)representedObject {
