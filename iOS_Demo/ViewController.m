@@ -10,37 +10,79 @@
 #import <YXNetworkDiagnose/YXNetworkDiagnose.h>
 
 @interface ViewController ()<YXNDOutputDelegate>
-
+@property (weak, nonatomic) IBOutlet UITextView *result;
+@property (weak, nonatomic) IBOutlet UITextField *pingText;
+@property (weak, nonatomic) IBOutlet UITextField *tcpPingText;
+@property (weak, nonatomic) IBOutlet UITextField *nslookupText;
+@property (weak, nonatomic) IBOutlet UITextField *traceText;
+@property (weak, nonatomic) IBOutlet UITextField *requestText;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    [YXNDPing start:@"192.168.1.1" output:self complete:^(YXNDPingResult *result) {
+    [_result setText:[NSString stringWithFormat:@"%@DeviceIP: %@\n", _result.text , [YXNDNetworkInfo deviceIP]]];
+    [_result setText:[NSString stringWithFormat:@"%@LocalDNSServers: %@\n", _result.text , [YXNDNetworkInfo localDNSServers]]];
+    [_result setText:[NSString stringWithFormat:@"%@NetworkType: %lu\n", _result.text , (unsigned long)[YXNDNetworkInfo networkType]]];
+    [_result setText:[NSString stringWithFormat:@"%@NetworkDescription: %@", _result.text , [YXNDNetworkInfo networkDescription]]];
+}
+- (IBAction)ping:(id)sender {
+    [_result setText:@""];
+    NSString *src = _pingText.text;
+    [YXNDPing start:src output:self complete:^(YXNDPingResult *result) {
         NSLog(@"%@",result.description);
     }];
-    [YXNDTcpPing start:@"qq.com" output:self complete:^(YXNDTcpPingResult *result) {
+}
+
+- (IBAction)tcpPing:(id)sender {
+    [_result setText:@""];
+    NSString *src = _tcpPingText.text;
+    [YXNDPing start:src output:self complete:^(YXNDPingResult *result) {
         NSLog(@"%@",result.description);
     }];
-    [YXNDTcpPing start:@"www.baidu.com" port:443 count:6 output:self complete:^(YXNDTcpPingResult *result) {
-        NSLog(@"%@",result.description);
-    }];
-    [YXNDNslookup start:@"qq.com" output:self complete:^(NSArray *result) {
+}
+
+- (IBAction)nslookup:(id)sender {
+    [_result setText:@""];
+    NSString *src = _nslookupText.text;
+    [YXNDNslookup start:src output:self complete:^(NSArray *result) {
         for(YXNDRecord *res in result) {
             NSLog(@"%@",res.description);
         }
     }];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)traceRoute:(id)sender {
+    [_result setText:@""];
+    NSString *src = _traceText.text;
+    [YXNDTraceRoute start:src output:self complete:^(YXNDTraceRouteResult *result) {
+        NSLog(@"%@",result.description);
+    }];
+}
+
+- (IBAction)httpRequest:(id)sender {
+    [_result setText:@""];
+    NSString *src = _requestText.text;
+    [YXNDHttp start:src output:self complete:^(YXNDHttpResult *result) {
+        NSLog(@"%@",result.description);
+    }];
+}
+
+- (IBAction)ipInfo:(id)sender {
+    [_result setText:@""];
+    NSDictionary *res = [YXNDNetworkInfo externalIpInfo];
+    NSArray *keys = [res allKeys];
+    for (NSString *key in keys) {
+        [_result setText:[NSString stringWithFormat:@"%@%@ : %@\n",_result.text, key, [res objectForKey:key]]];
+    }
 }
 
 - (void)write:(NSString*)line {
     NSLog(@"%@", line);
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [_result setText:[NSString stringWithFormat:@"%@%@", _result.text , line]];
+    });
 }
 
 @end
