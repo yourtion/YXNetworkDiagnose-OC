@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="6198" systemVersion="14A297b" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6198"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -641,12 +642,12 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider=""/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
-        <!--Window Controller - Window-->
+        <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
@@ -667,15 +668,194 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="580" height="537"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tBo-C5-TC5">
+                                <rect key="frame" x="465" y="489" width="101" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="89" id="j4m-6a-9gg"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="Ping" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7VI-U7-h0k">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="ping:" target="XfG-lQ-9wD" id="v3p-mY-zyN"/>
+                                </connections>
+                            </button>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JA7-h7-3SX">
+                                <rect key="frame" x="20" y="453" width="443" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="baidu.com" drawsBackground="YES" id="Uae-Ga-yFv">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="AgV-Sq-Faa">
+                                <rect key="frame" x="465" y="447" width="101" height="32"/>
+                                <buttonCell key="cell" type="push" title="TCPPing" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7Qh-WZ-0IP">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="tcpPing:" target="XfG-lQ-9wD" id="tgN-Ul-BwO"/>
+                                </connections>
+                            </button>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="VVm-5u-snT">
+                                <rect key="frame" x="20" y="411" width="443" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="taobao.com" drawsBackground="YES" id="3ei-R6-efL">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XG9-Dw-RA7">
+                                <rect key="frame" x="465" y="405" width="101" height="32"/>
+                                <buttonCell key="cell" type="push" title="Trace" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Sqg-yx-Htb">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="traceRoute:" target="XfG-lQ-9wD" id="Gcn-cA-eyf"/>
+                                </connections>
+                            </button>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="L8H-Ay-f14">
+                                <rect key="frame" x="20" y="369" width="443" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="baidu.com" drawsBackground="YES" id="B82-mb-r84">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rth-2H-Ryq">
+                                <rect key="frame" x="465" y="362" width="101" height="32"/>
+                                <buttonCell key="cell" type="push" title="NSLookup" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="skS-Xl-bVH">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="nslookup:" target="XfG-lQ-9wD" id="HNj-WW-wfs"/>
+                                </connections>
+                            </button>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qBB-B3-wyk">
+                                <rect key="frame" x="20" y="327" width="443" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="http://baidu.com" drawsBackground="YES" id="e19-Pn-RAQ">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kN1-MP-OAS">
+                                <rect key="frame" x="14" y="287" width="552" height="32"/>
+                                <buttonCell key="cell" type="push" title="IP Info" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="u1q-Va-wo4">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="ipInfo:" target="XfG-lQ-9wD" id="vRO-qn-osz"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="siS-3X-gf4">
+                                <rect key="frame" x="465" y="321" width="101" height="32"/>
+                                <buttonCell key="cell" type="push" title="HTTP" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="bzk-9J-l0f">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="httpRequest:" target="XfG-lQ-9wD" id="1Rw-o2-rKD"/>
+                                </connections>
+                            </button>
+                            <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2UV-9P-XwQ">
+                                <rect key="frame" x="20" y="20" width="540" height="254"/>
+                                <clipView key="contentView" id="9Vb-xM-ljj">
+                                    <rect key="frame" x="1" y="1" width="538" height="252"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="7wc-wl-olL">
+                                            <rect key="frame" x="0.0" y="0.0" width="538" height="252"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="minSize" width="538" height="252"/>
+                                            <size key="maxSize" width="540" height="10000000"/>
+                                            <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <size key="minSize" width="538" height="252"/>
+                                            <size key="maxSize" width="540" height="10000000"/>
+                                        </textView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="kZh-M9-3B7">
+                                    <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="iuk-Q3-5v7">
+                                    <rect key="frame" x="523" y="1" width="16" height="252"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jin-FU-Wxb">
+                                <rect key="frame" x="20" y="495" width="443" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="qq.com" drawsBackground="YES" id="vEE-rS-ORb">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="siS-3X-gf4" firstAttribute="leading" secondItem="qBB-B3-wyk" secondAttribute="trailing" constant="8" symbolic="YES" id="1Qj-lm-l3G"/>
+                            <constraint firstItem="jin-FU-Wxb" firstAttribute="leading" secondItem="JA7-h7-3SX" secondAttribute="leading" id="4vR-Aq-MoB"/>
+                            <constraint firstItem="L8H-Ay-f14" firstAttribute="leading" secondItem="qBB-B3-wyk" secondAttribute="leading" id="5m5-41-chg"/>
+                            <constraint firstItem="AgV-Sq-Faa" firstAttribute="leading" secondItem="JA7-h7-3SX" secondAttribute="trailing" constant="8" symbolic="YES" id="B8W-Mr-IHO"/>
+                            <constraint firstItem="rth-2H-Ryq" firstAttribute="leading" secondItem="siS-3X-gf4" secondAttribute="leading" id="BBE-pu-aJX"/>
+                            <constraint firstItem="VVm-5u-snT" firstAttribute="leading" secondItem="L8H-Ay-f14" secondAttribute="leading" id="EnH-II-rJI"/>
+                            <constraint firstItem="XG9-Dw-RA7" firstAttribute="trailing" secondItem="rth-2H-Ryq" secondAttribute="trailing" id="J58-Jb-yRy"/>
+                            <constraint firstItem="kN1-MP-OAS" firstAttribute="top" secondItem="qBB-B3-wyk" secondAttribute="bottom" constant="12" id="Jc2-8h-r2h"/>
+                            <constraint firstItem="qBB-B3-wyk" firstAttribute="top" secondItem="siS-3X-gf4" secondAttribute="top" id="Li5-LH-3L7"/>
+                            <constraint firstItem="kN1-MP-OAS" firstAttribute="trailing" secondItem="2UV-9P-XwQ" secondAttribute="trailing" id="LwT-q9-eqL"/>
+                            <constraint firstItem="rth-2H-Ryq" firstAttribute="leading" secondItem="L8H-Ay-f14" secondAttribute="trailing" constant="8" symbolic="YES" id="LzH-Kr-rs2"/>
+                            <constraint firstItem="JA7-h7-3SX" firstAttribute="top" secondItem="jin-FU-Wxb" secondAttribute="bottom" constant="20" id="Neh-QC-sDs"/>
+                            <constraint firstItem="L8H-Ay-f14" firstAttribute="top" secondItem="VVm-5u-snT" secondAttribute="bottom" constant="20" id="Os7-Kc-GtI"/>
+                            <constraint firstItem="tBo-C5-TC5" firstAttribute="trailing" secondItem="AgV-Sq-Faa" secondAttribute="trailing" id="PPP-W8-NaA"/>
+                            <constraint firstItem="VVm-5u-snT" firstAttribute="top" secondItem="XG9-Dw-RA7" secondAttribute="top" id="R7t-nl-G8r"/>
+                            <constraint firstItem="JA7-h7-3SX" firstAttribute="top" secondItem="AgV-Sq-Faa" secondAttribute="top" id="TJK-9z-Sfl"/>
+                            <constraint firstItem="tBo-C5-TC5" firstAttribute="leading" secondItem="jin-FU-Wxb" secondAttribute="trailing" constant="8" symbolic="YES" id="U9S-c9-Lf5"/>
+                            <constraint firstItem="siS-3X-gf4" firstAttribute="trailing" secondItem="kN1-MP-OAS" secondAttribute="trailing" id="UOp-BY-eW6"/>
+                            <constraint firstItem="L8H-Ay-f14" firstAttribute="baseline" secondItem="rth-2H-Ryq" secondAttribute="baseline" id="VCq-5L-e3X"/>
+                            <constraint firstItem="jin-FU-Wxb" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="VLD-wL-cjX"/>
+                            <constraint firstItem="jin-FU-Wxb" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" symbolic="YES" id="VuE-mY-xhQ"/>
+                            <constraint firstItem="qBB-B3-wyk" firstAttribute="leading" secondItem="kN1-MP-OAS" secondAttribute="leading" id="Z83-Rw-eJY"/>
+                            <constraint firstItem="AgV-Sq-Faa" firstAttribute="trailing" secondItem="XG9-Dw-RA7" secondAttribute="trailing" id="Zkb-r0-CGX"/>
+                            <constraint firstItem="XG9-Dw-RA7" firstAttribute="leading" secondItem="rth-2H-Ryq" secondAttribute="leading" id="atB-YJ-YWe"/>
+                            <constraint firstItem="qBB-B3-wyk" firstAttribute="top" secondItem="L8H-Ay-f14" secondAttribute="bottom" constant="20" id="dS5-eJ-apa"/>
+                            <constraint firstItem="tBo-C5-TC5" firstAttribute="leading" secondItem="AgV-Sq-Faa" secondAttribute="leading" id="e4g-UY-xct"/>
+                            <constraint firstItem="AgV-Sq-Faa" firstAttribute="leading" secondItem="XG9-Dw-RA7" secondAttribute="leading" id="fp0-fM-haH"/>
+                            <constraint firstItem="JA7-h7-3SX" firstAttribute="leading" secondItem="VVm-5u-snT" secondAttribute="leading" id="g12-0v-SKv"/>
+                            <constraint firstItem="2UV-9P-XwQ" firstAttribute="top" secondItem="kN1-MP-OAS" secondAttribute="bottom" constant="20" symbolic="YES" id="hL1-Hg-rPS"/>
+                            <constraint firstItem="kN1-MP-OAS" firstAttribute="leading" secondItem="2UV-9P-XwQ" secondAttribute="leading" id="iEH-Vi-iTE"/>
+                            <constraint firstItem="VVm-5u-snT" firstAttribute="top" secondItem="JA7-h7-3SX" secondAttribute="bottom" constant="20" id="n9x-GN-Haa"/>
+                            <constraint firstItem="XG9-Dw-RA7" firstAttribute="leading" secondItem="VVm-5u-snT" secondAttribute="trailing" constant="8" symbolic="YES" id="nwn-dD-UMI"/>
+                            <constraint firstItem="rth-2H-Ryq" firstAttribute="trailing" secondItem="siS-3X-gf4" secondAttribute="trailing" id="o3k-N1-dZe"/>
+                            <constraint firstItem="jin-FU-Wxb" firstAttribute="top" secondItem="tBo-C5-TC5" secondAttribute="top" id="rQJ-Sl-jvp"/>
+                            <constraint firstAttribute="trailing" secondItem="tBo-C5-TC5" secondAttribute="trailing" constant="20" symbolic="YES" id="sgg-re-A5V"/>
+                            <constraint firstAttribute="bottom" secondItem="2UV-9P-XwQ" secondAttribute="bottom" constant="20" symbolic="YES" id="zc7-pB-pbH"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nslookupText" destination="L8H-Ay-f14" id="3kP-Ut-zru"/>
+                        <outlet property="pingText" destination="jin-FU-Wxb" id="ffL-L1-DfM"/>
+                        <outlet property="requestText" destination="qBB-B3-wyk" id="vXS-P2-Xq2"/>
+                        <outlet property="result" destination="7wc-wl-olL" id="tx0-R5-LVd"/>
+                        <outlet property="tcpPingText" destination="JA7-h7-3SX" id="5VT-RP-xmD"/>
+                        <outlet property="traceText" destination="VVm-5u-snT" id="96O-jU-VpC"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="-41" y="837.5"/>
         </scene>
     </scenes>
 </document>
