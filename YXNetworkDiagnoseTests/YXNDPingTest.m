@@ -62,7 +62,6 @@ static int kTimeOut = 30;
     __block BOOL run = NO;
     [YXNDPing start:@"www.baidu.com" output:self complete:^(YXNDPingResult *result) {
         XCTAssertNotNil(result, @"Result can't be nil");
-        XCTAssertEqual(0, result.code, @"normal code");
         XCTAssert(result.maxRtt >= result.avgRtt, @"max time >= avg time");
         XCTAssert(result.minRtt <= result.avgRtt, @"min time =< avg time");
         XCTAssertEqual(_count, 5);
