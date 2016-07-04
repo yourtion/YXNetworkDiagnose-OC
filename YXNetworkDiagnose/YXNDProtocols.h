@@ -8,19 +8,35 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ *  Network Diagnose Stop Delegate
+ */
 @protocol YXNDStopDelegate <NSObject>
 
+/**
+ *  Delegate Stop
+ */
 - (void)stop;
 
 @end
 
+/**
+ *  Network Diagnose Output Delegate
+ */
 @protocol YXNDOutputDelegate <NSObject>
 
+/**
+ *  Delegate call when result
+ *
+ *  @param line result message
+ */
 - (void)write:(NSString*)line;
 
 @end
 
 /**
- *    中途取消的状态码
+ *  中途取消的状态码
  */
+const NSInteger kYXNDRequestStoped = -1;
 extern const NSInteger kYXNDRequestStoped;
+
