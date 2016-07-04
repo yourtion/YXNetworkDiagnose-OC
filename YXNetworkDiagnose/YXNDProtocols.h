@@ -37,6 +37,4 @@
 /**
  *  中途取消的状态码
  */
-const NSInteger kYXNDRequestStoped = -1;
 extern const NSInteger kYXNDRequestStoped;
-
