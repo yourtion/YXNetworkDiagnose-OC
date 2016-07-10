@@ -19,6 +19,8 @@
 		CB42FE041D07F27F00EADB77 /* YXNetworkDiagnose.h in Headers */ = {isa = PBXBuildFile; fileRef = CB25D7B71D07DA03000CE9EE /* YXNetworkDiagnose.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB42FE051D07F27F00EADB77 /* YXNDProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = CB25D7F51D07DD69000CE9EE /* YXNDProtocols.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB42FE061D07F27F00EADB77 /* YXNDPing.h in Headers */ = {isa = PBXBuildFile; fileRef = CB25D7F71D07DDC5000CE9EE /* YXNDPing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB6EBA8E1D2A27DA00457795 /* YXNDLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6EBA8D1D2A27DA00457795 /* YXNDLogger.m */; };
+		CB6EBA8F1D2A27DA00457795 /* YXNDLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6EBA8D1D2A27DA00457795 /* YXNDLogger.m */; };
 		CBB5687C1D1CCF1E002B3666 /* YXNDTraceRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = CBB5687A1D1CCF1E002B3666 /* YXNDTraceRoute.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBB5687D1D1CCF1E002B3666 /* YXNDTraceRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = CBB5687A1D1CCF1E002B3666 /* YXNDTraceRoute.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBB5687E1D1CCF1E002B3666 /* YXNDTraceRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB5687B1D1CCF1E002B3666 /* YXNDTraceRoute.m */; };
@@ -68,6 +70,8 @@
 		CB25D7F71D07DDC5000CE9EE /* YXNDPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXNDPing.h; sourceTree = "<group>"; };
 		CB25D7F81D07DDC5000CE9EE /* YXNDPing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXNDPing.m; sourceTree = "<group>"; };
 		CB42FDFB1D07F23A00EADB77 /* YXNetworkDiagnose.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YXNetworkDiagnose.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB6EBA8C1D2A27DA00457795 /* YXNDLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXNDLogger.h; sourceTree = "<group>"; };
+		CB6EBA8D1D2A27DA00457795 /* YXNDLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXNDLogger.m; sourceTree = "<group>"; };
 		CBB5687A1D1CCF1E002B3666 /* YXNDTraceRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXNDTraceRoute.h; sourceTree = "<group>"; };
 		CBB5687B1D1CCF1E002B3666 /* YXNDTraceRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXNDTraceRoute.m; sourceTree = "<group>"; };
 		CBB568801D1CD0B2002B3666 /* YXNDHTTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXNDHTTP.h; sourceTree = "<group>"; };
@@ -162,6 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				CBDFBC821D1A6A4E00D52170 /* Info.plist */,
+				CB6EBA8C1D2A27DA00457795 /* YXNDLogger.h */,
+				CB6EBA8D1D2A27DA00457795 /* YXNDLogger.m */,
 				CBDFBC991D1A8F1E00D52170 /* YXNDPingTest.m */,
 			);
 			path = YXNetworkDiagnoseTests;
@@ -195,8 +201,8 @@
 				CBF7469F1D0BE6FE0040F811 /* YXNDNslookup.h in Headers */,
 				CB14D5321D09A3DB00EB35C9 /* YXNDTcpPing.h in Headers */,
 				CBB5687D1D1CCF1E002B3666 /* YXNDTraceRoute.h in Headers */,
-				CBB568831D1CD0B2002B3666 /* YXNDHTTP.h in Headers */,
 				CBEF152A1D11BF750028B2B1 /* YXNDNetworkInfo.h in Headers */,
+				CBB568831D1CD0B2002B3666 /* YXNDHTTP.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +386,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB6EBA8E1D2A27DA00457795 /* YXNDLogger.m in Sources */,
 				CBDFBC9A1D1A8F1E00D52170 /* YXNDPingTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB6EBA8F1D2A27DA00457795 /* YXNDLogger.m in Sources */,
 				CBDFBC9B1D1A8F1E00D52170 /* YXNDPingTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
