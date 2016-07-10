@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 /**
- *    Network Type
+ *  Network Type
  */
 typedef NS_ENUM(NSUInteger, YXNDNetWorkType) {
     YXNDNetWorkType_None = 0,

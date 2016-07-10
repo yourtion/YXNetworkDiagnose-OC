@@ -10,12 +10,12 @@
 #import <Foundation/Foundation.h>
 
 /**
- *    A 记录
+ *  A record
  */
 extern const int kYXNDTypeA;
 
 /**
- *  Cname 记录
+ *  CName record
  */
 extern const int kYXNDTypeCname;
 
@@ -32,14 +32,41 @@ extern const int kYXNDTypeCname;
 
 @end
 
+/**
+ *  YXNetworkDiagnose NSLookup Complete Handler
+ *
+ *  @param NSArray nslookup result array
+ */
 typedef void (^YXNDNslookupCompleteHandler)(NSArray *);
 
+/**
+ *  YXNetworkDiagnose for NSLookup
+ */
 @interface YXNDNslookup : NSObject <YXNDStopDelegate>
 
+/**
+ *  NSLookup domain simple
+ *
+ *  @param domain   domain to lookup
+ *  @param output   output logger
+ *  @param complete complete callback, maybe null
+ *
+ *  @return YXNDNslookup instance, could be stop
+ */
 + (instancetype)start:(NSString *)domain
                output:(id<YXNDOutputDelegate>)output
              complete:(YXNDNslookupCompleteHandler)complete;
 
+/**
+ *  NSLookup domain in special dns server
+ *
+ *  @param domain    domain to lookup
+ *  @param dnsServer DSN server to lookup domain
+ *  @param output    output logger
+ *  @param complete  complete callback, maybe null
+ *
+ *  @return YXNDNslookup instance, could be stop
+ */
 + (instancetype)start:(NSString *)domain
                server:(NSString *)dnsServer
                output:(id<YXNDOutputDelegate>)output

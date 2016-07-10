@@ -26,14 +26,43 @@ extern const int kYXNDInvalidPingResponse;
 
 @end
 
+/**
+ *  YXNetworkDiagnose Ping Complete Handler
+ *
+ *  @param YXNDPingResult complete result
+ */
 typedef void (^YXNDPingCompleteHandler)(YXNDPingResult *);
 
+
+/**
+ *  YXNetworkDiagnose for Ping
+ */
 @interface YXNDPing : NSObject<YXNDStopDelegate>
 
+/**
+ *  Ping domain or ip simple
+ *
+ *  @param host     domain or ip
+ *  @param output   output logger
+ *  @param complete complete callback
+ *
+ *  @return YXNDPing instance, could be stop
+ */
 + (instancetype)start:(NSString*)host
                output:(id<YXNDOutputDelegate>)output
              complete:(YXNDPingCompleteHandler)complete;
 
+/**
+ *  Ping domain or ip advanced
+ *
+ *  @param host     domain or ip
+ *  @param output   output logger
+ *  @param complete complete callback, maybe null
+ *  @param interval time interval
+ *  @param count    how many times to ping
+ *
+ *  @return YXNDPing instance, could be stop
+ */
 + (instancetype)start:(NSString*)host
                output:(id<YXNDOutputDelegate>)output
              complete:(YXNDPingCompleteHandler)complete

@@ -20,8 +20,17 @@
 
 @end
 
+/**
+ *  YXNetworkDiagnose HTTP Complete Handler
+ *
+ *  @param YXNDHttpResult complete result
+ */
 typedef void (^YXNDHttpCompleteHandler)(YXNDHttpResult*);
 
+
+/**
+ *  YXNetworkDiagnose for HTTP
+ */
 @interface YXNDHttp : NSObject <YXNDStopDelegate>
 
 /**
@@ -31,7 +40,7 @@ typedef void (^YXNDHttpCompleteHandler)(YXNDHttpResult*);
  *    @param output   output logger
  *    @param complete complete callback, maybe null
  *
- *    @return YXNDTcpping instance, could be stop
+ *    @return YXNDHttp instance, could be stop
  */
 + (instancetype)start:(NSString*)url
                output:(id<YXNDOutputDelegate>)output

@@ -35,6 +35,6 @@
 @end
 
 /**
- *  中途取消的状态码
+ *  Stop code
  */
 #define kYXNDRequestStoped -1
