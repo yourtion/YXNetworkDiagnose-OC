@@ -17,8 +17,6 @@ Network Diagnose Framework for iOS and OSX.
 Add in your `Podfile`:
 
 ```
-platform :ios, '8.0'
-
 pod 'NetworkDiagnose'
 ```
 
@@ -35,7 +33,7 @@ github "yourtion/YXNetworkDiagnose-OC"
 import head file :
 
 ```objc
-#import <YXNetworkDiagnose/YXNetworkDiagnose.h>
+#import <NetworkDiagnose/YXNetworkDiagnose.h>
 ```
 
 ## Functions
