@@ -113,9 +113,9 @@
         NSTimeInterval duration = [[NSDate date] timeIntervalSinceDate:t1];
         intervals[index] = duration * 1000;
         if (r == 0) {
-            [self.output write:[NSString stringWithFormat:@"connected to %s:%lu, %f ms\n", inet_ntoa(addr.sin_addr), (unsigned long)_port, duration * 1000]];
+            [self.output write:[NSString stringWithFormat:@"connected to %s:%lu, %f ms\n", inet_ntoa(addr.sin_addr), (unsigned long)_port, intervals[index]]];
         } else {
-            [self.output write:[NSString stringWithFormat:@"connect failed to %s:%lu, %f ms, error %d\n", inet_ntoa(addr.sin_addr), (unsigned long)_port, duration * 1000, r]];
+            [self.output write:[NSString stringWithFormat:@"connect failed to %s:%lu, %f ms, error %d\n", inet_ntoa(addr.sin_addr), (unsigned long)_port, intervals[index], r]];
         }
         
         if (index < _count && !_stopped && r == 0) {
@@ -130,9 +130,11 @@
         }
         dispatch_async(dispatch_get_main_queue(), ^(void) {
             _complete([self buildResult:code durations:intervals count:index]);
+            free(intervals);
         });
+    } else {
+        free(intervals);
     }
-    free(intervals);
 }
 
 - (YXNDTcpPingResult *)buildResult:(NSInteger)code
