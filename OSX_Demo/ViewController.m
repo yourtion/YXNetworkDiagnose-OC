@@ -38,7 +38,7 @@
 - (IBAction)tcpPing:(id)sender {
     [_result setString:@""];
     NSString *src = _tcpPingText.stringValue;
-    [YXNDPing start:src output:self complete:^(YXNDPingResult *result) {
+    [YXNDTcpPing start:src output:self complete:^(YXNDTcpPingResult *result) {
         NSLog(@"%@",result.description);
     }];
 }
