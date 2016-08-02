@@ -15,6 +15,8 @@
 		CB25D7F61D07DD69000CE9EE /* YXNDProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = CB25D7F51D07DD69000CE9EE /* YXNDProtocols.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB25D7F91D07DDC5000CE9EE /* YXNDPing.h in Headers */ = {isa = PBXBuildFile; fileRef = CB25D7F71D07DDC5000CE9EE /* YXNDPing.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB25D7FA1D07DDC5000CE9EE /* YXNDPing.m in Sources */ = {isa = PBXBuildFile; fileRef = CB25D7F81D07DDC5000CE9EE /* YXNDPing.m */; };
+		CB362D971D4F927900B26E31 /* YXNDTcpPingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CB362D961D4F927900B26E31 /* YXNDTcpPingTest.m */; };
+		CB362D981D4F927900B26E31 /* YXNDTcpPingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CB362D961D4F927900B26E31 /* YXNDTcpPingTest.m */; };
 		CB42FE031D07F27500EADB77 /* YXNDPing.m in Sources */ = {isa = PBXBuildFile; fileRef = CB25D7F81D07DDC5000CE9EE /* YXNDPing.m */; };
 		CB42FE041D07F27F00EADB77 /* YXNetworkDiagnose.h in Headers */ = {isa = PBXBuildFile; fileRef = CB25D7B71D07DA03000CE9EE /* YXNetworkDiagnose.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB42FE051D07F27F00EADB77 /* YXNDProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = CB25D7F51D07DD69000CE9EE /* YXNDProtocols.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -69,6 +71,7 @@
 		CB25D7F51D07DD69000CE9EE /* YXNDProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXNDProtocols.h; sourceTree = "<group>"; };
 		CB25D7F71D07DDC5000CE9EE /* YXNDPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXNDPing.h; sourceTree = "<group>"; };
 		CB25D7F81D07DDC5000CE9EE /* YXNDPing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXNDPing.m; sourceTree = "<group>"; };
+		CB362D961D4F927900B26E31 /* YXNDTcpPingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXNDTcpPingTest.m; sourceTree = "<group>"; };
 		CB42FDFB1D07F23A00EADB77 /* YXNetworkDiagnose.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YXNetworkDiagnose.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB6EBA8C1D2A27DA00457795 /* YXNDLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXNDLogger.h; sourceTree = "<group>"; };
 		CB6EBA8D1D2A27DA00457795 /* YXNDLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXNDLogger.m; sourceTree = "<group>"; };
@@ -169,6 +172,7 @@
 				CB6EBA8C1D2A27DA00457795 /* YXNDLogger.h */,
 				CB6EBA8D1D2A27DA00457795 /* YXNDLogger.m */,
 				CBDFBC991D1A8F1E00D52170 /* YXNDPingTest.m */,
+				CB362D961D4F927900B26E31 /* YXNDTcpPingTest.m */,
 			);
 			path = YXNetworkDiagnoseTests;
 			sourceTree = "<group>";
@@ -388,6 +392,7 @@
 			files = (
 				CB6EBA8E1D2A27DA00457795 /* YXNDLogger.m in Sources */,
 				CBDFBC9A1D1A8F1E00D52170 /* YXNDPingTest.m in Sources */,
+				CB362D971D4F927900B26E31 /* YXNDTcpPingTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +402,7 @@
 			files = (
 				CB6EBA8F1D2A27DA00457795 /* YXNDLogger.m in Sources */,
 				CBDFBC9B1D1A8F1E00D52170 /* YXNDPingTest.m in Sources */,
+				CB362D981D4F927900B26E31 /* YXNDTcpPingTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
