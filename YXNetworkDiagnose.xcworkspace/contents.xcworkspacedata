@@ -5,9 +5,9 @@
       location = "group:YXNetworkDiagnose.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:iOS_Demo.xcodeproj">
+      location = "group:Examples/OSX_Demo.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:OSX_Demo.xcodeproj">
+      location = "group:Examples/iOS_Demo.xcodeproj">
    </FileRef>
 </Workspace>

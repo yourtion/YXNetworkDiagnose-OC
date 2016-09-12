@@ -12,19 +12,19 @@
 		CB25D80F1D07E7A3000CE9EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB25D80E1D07E7A3000CE9EE /* ViewController.m */; };
 		CB25D8111D07E7A3000CE9EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB25D8101D07E7A3000CE9EE /* Assets.xcassets */; };
 		CB25D8141D07E7A3000CE9EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB25D8121D07E7A3000CE9EE /* Main.storyboard */; };
-		CB42FE071D07F31800EADB77 /* YXNetworkDiagnose.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB25D8921D07EF72000CE9EE /* YXNetworkDiagnose.framework */; };
-		CB42FE081D07F31800EADB77 /* YXNetworkDiagnose.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB25D8921D07EF72000CE9EE /* YXNetworkDiagnose.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CB773EAD1D7449810075EC98 /* YXNetworkDiagnose.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB773EAB1D74497B0075EC98 /* YXNetworkDiagnose.framework */; };
+		CB773EAE1D7449810075EC98 /* YXNetworkDiagnose.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB773EAB1D74497B0075EC98 /* YXNetworkDiagnose.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CBF746A91D0BEB920040F811 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CBF746A81D0BEB920040F811 /* libresolv.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		CB42FE091D07F31800EADB77 /* Embed Frameworks */ = {
+		CB773EAF1D7449810075EC98 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CB42FE081D07F31800EADB77 /* YXNetworkDiagnose.framework in Embed Frameworks */,
+				CB773EAE1D7449810075EC98 /* YXNetworkDiagnose.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,7 +41,7 @@
 		CB25D8101D07E7A3000CE9EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB25D8131D07E7A3000CE9EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB25D8151D07E7A3000CE9EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB25D8921D07EF72000CE9EE /* YXNetworkDiagnose.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YXNetworkDiagnose.framework; path = "../../../Library/Developer/Xcode/DerivedData/YXNetworkDiagnose-fwmhltbyxmrcuwbzwgirkxefkixz/Build/Products/Debug/YXNetworkDiagnose.framework"; sourceTree = "<group>"; };
+		CB773EAB1D74497B0075EC98 /* YXNetworkDiagnose.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YXNetworkDiagnose.framework; path = "../../../../Library/Developer/Xcode/DerivedData/YXNetworkDiagnose-fwmhltbyxmrcuwbzwgirkxefkixz/Build/Products/Debug/YXNetworkDiagnose.framework"; sourceTree = "<group>"; };
 		CBF746A81D0BEB920040F811 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -50,8 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB773EAD1D7449810075EC98 /* YXNetworkDiagnose.framework in Frameworks */,
 				CBF746A91D0BEB920040F811 /* libresolv.tbd in Frameworks */,
-				CB42FE071D07F31800EADB77 /* YXNetworkDiagnose.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,8 +61,8 @@
 		CB25D7FB1D07E7A2000CE9EE = {
 			isa = PBXGroup;
 			children = (
+				CB773EAB1D74497B0075EC98 /* YXNetworkDiagnose.framework */,
 				CBF746A81D0BEB920040F811 /* libresolv.tbd */,
-				CB25D8921D07EF72000CE9EE /* YXNetworkDiagnose.framework */,
 				CB25D8061D07E7A3000CE9EE /* OSX_Demo */,
 				CB25D8051D07E7A3000CE9EE /* Products */,
 			);
@@ -109,7 +109,7 @@
 				CB25D8001D07E7A3000CE9EE /* Sources */,
 				CB25D8011D07E7A3000CE9EE /* Frameworks */,
 				CB25D8021D07E7A3000CE9EE /* Resources */,
-				CB42FE091D07F31800EADB77 /* Embed Frameworks */,
+				CB773EAF1D7449810075EC98 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
