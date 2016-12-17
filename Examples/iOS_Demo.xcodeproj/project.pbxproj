@@ -13,19 +13,19 @@
 		CB25D7D61D07DA44000CE9EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB25D7D41D07DA44000CE9EE /* Main.storyboard */; };
 		CB25D7D81D07DA44000CE9EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB25D7D71D07DA44000CE9EE /* Assets.xcassets */; };
 		CB25D7DB1D07DA44000CE9EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB25D7D91D07DA44000CE9EE /* LaunchScreen.storyboard */; };
-		CB773EB71D7449B80075EC98 /* YXNetworkDiagnose.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB773EB51D7449B10075EC98 /* YXNetworkDiagnose.framework */; };
-		CB773EB81D7449B80075EC98 /* YXNetworkDiagnose.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB773EB51D7449B10075EC98 /* YXNetworkDiagnose.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBDD47561DF7F96F00DFA2A4 /* YXNetworkDiagnose.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDD47551DF7F96F00DFA2A4 /* YXNetworkDiagnose.framework */; };
+		CBDD47571DF7F96F00DFA2A4 /* YXNetworkDiagnose.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBDD47551DF7F96F00DFA2A4 /* YXNetworkDiagnose.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CBF746A71D0BEB280040F811 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CBF746A61D0BEB280040F811 /* libresolv.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		CB773EB91D7449B80075EC98 /* Embed Frameworks */ = {
+		CBDD47581DF7F96F00DFA2A4 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CB773EB81D7449B80075EC98 /* YXNetworkDiagnose.framework in Embed Frameworks */,
+				CBDD47571DF7F96F00DFA2A4 /* YXNetworkDiagnose.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,7 +43,7 @@
 		CB25D7D71D07DA44000CE9EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB25D7DA1D07DA44000CE9EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB25D7DC1D07DA44000CE9EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB773EB51D7449B10075EC98 /* YXNetworkDiagnose.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YXNetworkDiagnose.framework; path = "../../../../Library/Developer/Xcode/DerivedData/YXNetworkDiagnose-fwmhltbyxmrcuwbzwgirkxefkixz/Build/Products/Debug-iphoneos/YXNetworkDiagnose.framework"; sourceTree = "<group>"; };
+		CBDD47551DF7F96F00DFA2A4 /* YXNetworkDiagnose.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YXNetworkDiagnose.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF746A61D0BEB280040F811 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -52,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB773EB71D7449B80075EC98 /* YXNetworkDiagnose.framework in Frameworks */,
+				CBDD47561DF7F96F00DFA2A4 /* YXNetworkDiagnose.framework in Frameworks */,
 				CBF746A71D0BEB280040F811 /* libresolv.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,7 +63,7 @@
 		CB25D7BF1D07DA44000CE9EE = {
 			isa = PBXGroup;
 			children = (
-				CB773EB51D7449B10075EC98 /* YXNetworkDiagnose.framework */,
+				CBDD47551DF7F96F00DFA2A4 /* YXNetworkDiagnose.framework */,
 				CBF746A61D0BEB280040F811 /* libresolv.tbd */,
 				CB25D7CA1D07DA44000CE9EE /* iOS_Demo */,
 				CB25D7C91D07DA44000CE9EE /* Products */,
@@ -112,7 +112,7 @@
 				CB25D7C41D07DA44000CE9EE /* Sources */,
 				CB25D7C51D07DA44000CE9EE /* Frameworks */,
 				CB25D7C61D07DA44000CE9EE /* Resources */,
-				CB773EB91D7449B80075EC98 /* Embed Frameworks */,
+				CBDD47581DF7F96F00DFA2A4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,7 +129,7 @@
 		CB25D7C01D07DA44000CE9EE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = Yourtion;
 				TargetAttributes = {
 					CB25D7C71D07DA44000CE9EE = {
@@ -215,8 +215,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -259,8 +261,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

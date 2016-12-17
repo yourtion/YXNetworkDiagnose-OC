@@ -39,6 +39,7 @@
     [_result setText:@""];
     NSString *src = _tcpPingText.text;
     [YXNDTcpPing start:src output:self complete:^(YXNDTcpPingResult *result) {
+        [self write:result.description];
         NSLog(@"%@",result.description);
     }];
 }
