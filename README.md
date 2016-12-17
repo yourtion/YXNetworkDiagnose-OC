@@ -36,6 +36,12 @@ import head file :
 #import <NetworkDiagnose/YXNetworkDiagnose.h>
 ```
 
+## Demo
+
+![ScreenShot-Mac](ScreenShot-Mac.png)
+
+![ScreenShot-iOS](ScreenShot-iOS.png)
+
 ## Functions
 
 ### Ping
